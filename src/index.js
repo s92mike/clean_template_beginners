@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 class App extends Component {
   render(){
     return (<div className="h2">
-      Test
+      Test version 2
     </div>)
   }
 }

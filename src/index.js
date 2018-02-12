@@ -15,3 +15,20 @@ class App extends Component {
 }
 
 ReactDOM.render(<App/>, document.querySelector('.container'))
+
+
+var {foo, bar: baz} = {foo: 0, bar: 1}
+console.log(baz, foo)
+
+var pony = {foo: "pony test", test: "test rah"}
+var {foo, test, maker} = pony
+console.log(pony)
+console.log(foo)
+
+var foo, baz;
+var {foo: {bar}} = { foo: { bar: 'baz' } }
+console.log(foo)
+console.log('{@foo:{bar}} = foo, bar, baz:::', `foo:${foo}`, foo, bar, baz)
+pony = {foo: 'test baz'}
+var {foo='bar'} = baz
+console.log(foo, bar)

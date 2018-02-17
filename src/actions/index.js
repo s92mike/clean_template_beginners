@@ -5,6 +5,7 @@ export const REJECTHERO = "FETCH_HERO_REJECTED"
 export const FILLEDHERO = "FETCH_HERO_FULFILLED"
 export const CLICKUSER = "CLICK_FB_USER"
 export const SEARCHHEROTERM = "SEARCH_HERO"
+export const SELECTEDHERO = "SELECTED_HERO"
 
 export const NEXTPAGE = "NEXT_PAGE"
 export const PREVPAGE = "PREV_PAGE"

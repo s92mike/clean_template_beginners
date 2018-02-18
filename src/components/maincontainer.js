@@ -5,6 +5,8 @@ import { connect } from 'react-redux'
 import { OPENAPILINK } from '../actions'
 import * as heroesActions from '../actions/heroesActions'
 
+import Itemsearch from './itemsearch'
+
 @connect((store)=>{
     return {
         heroes: store.heroR
@@ -34,9 +36,7 @@ export default class Maincontainer extends Component {
                         <a className="nav-link" href="javascript:void(0)">Players</a>
                     </li>
                 </ul>            
-                <div className='search-bar'>
-                    <input className="rounded" />
-                </div>
+                <Itemsearch />
                 <div className="p-2 well">
                     <h5>{hero.localized_name}</h5>
                     <h6>Statistics: </h6>

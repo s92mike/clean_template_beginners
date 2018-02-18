@@ -12,4 +12,5 @@ export const PREVPAGE = "PREV_PAGE"
 
 export const STEAMWEBAPIKEY = "3A7C93E54E7D1BE7F159B9B89EE16AA5"
 export const OPENDOTAPLAYERID = "76561198071108778"
-export const OPENAPILINK = "https://api.opendota.com/api/"
+export const OPENAPILINK = "https://api.opendota.com"
+export const OPENAPILINKAPI = "/api"

@@ -21,7 +21,7 @@ export default class Wantedlist extends Component {
     }
     render() {
         const { heroes, status, selectedItem } = this.props
-        const listItems = heroes.slice(status.pageListStatus, status.maxListStatus).map( hero => <li onClick={(e)=>this.selectItem(hero)} style={{cursor: 'pointer'}} className={`list-group-item${hero.id==selectedItem.id?' active':''}`} key={hero.id} >{hero.localized_name}</li>)
+        const listItems = heroes.slice(status.pageListStatus, status.maxListStatus).map( hero => <li onClick={(e)=>this.selectItem(hero)} style={{cursor: 'pointer'}} className={`list-group-item${hero.id==selectedItem.id?' active':''}`} key={hero.id} ><img src={`https:\/\/api.opendota.com${hero.icon}`} /> {hero.localized_name}</li>)
         return (
             <ul className="list-group" style={{padding: 6}}>
                 {listItems}

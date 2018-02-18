@@ -5,13 +5,14 @@ import {
     SEARCHHERO,
     OPENAPILINK,
     SEARCHHEROTERM,
-    SELECTEDHERO
+    SELECTEDHERO,
+    OPENAPILINKAPI
 } from './index'
 
 export function getHeroes() {
     return function (dispatch) {
         dispatch({type: SEARCHHERO})
-        axios.get(`${OPENAPILINK}/heroStats`)
+        axios.get(`${OPENAPILINK+OPENAPILINKAPI}/heroStats`)
             .then((response) => {
                 dispatch({ type: FILLEDHERO, payload: response.data })
             })
